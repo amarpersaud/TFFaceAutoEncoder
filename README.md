@@ -27,7 +27,7 @@ After substantial training, the network begins to show an output that somewhat m
 
 The training ouput begins to look like a blurred version of the input values. With more training and a better network structure, a higher quality output could be achieved. 
 
-The third row which shows faces generated using random values does not show viable human faces. This is likely due to limited training time, and the modification of values in the encoded space that the network either does not use and thus results in spurious inputs that interrupt the network, or does not modify them within the full range of possible inputs (e.g. [0,1] instead of [0,10] would result in a limited input range that does not properly reflect the encoder's output, resulting in many similar looking faces).
+The third row which shows faces generated using random values does not show viable human faces. This is likely due to serveral factors: limited training time, values outside the range that the network uses, and the modification of values in the encoded space that the network either does not use, or values which it does not use simultaneously, and thus results in spurious inputs that interrupt the network, or does not modify them within the full range of possible inputs (e.g. [0,1] instead of [0,10] would result in a limited input range that does not properly reflect the encoder's output, resulting in many similar looking faces).
 
 ## Modified Output
 
